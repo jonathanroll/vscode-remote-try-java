@@ -46,12 +46,16 @@ public class permtst {
             int posCd = i;
 
             for ( int pos = l; pos > 0 ; pos-- ){
+
                 int selected = posCd / f[pos-1];
+                
                 perm += tmp.charAt(selected);
-                posCd = posCd % f[ pos-1 ];
+                
                 tmp = tmp.substring(0,selected) + tmp.substring(selected+1);
 
                 System.out.print("Pos: " + pos + ", f: " + f[pos] + ", posCd: " + posCd + ", selected: " + selected + ", perm: " + perm + ", tmp: " + tmp + "\n");
+
+                posCd = posCd % f[ pos-1 ];
             }
 
             System.out.println(perm);
