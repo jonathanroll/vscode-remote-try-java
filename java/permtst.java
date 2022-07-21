@@ -14,6 +14,8 @@ public class permtst {
             System.out.println("-----------------------------------------------------");
             permtgt(args[0]);
         }
+    
+
     }
 
     private static void permtgtr(String ts, String sub){
